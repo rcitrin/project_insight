@@ -1,0 +1,56 @@
+{
+  "project_name": "Project Insight: APCSP Question Engine",
+  "initialized_year": 2026,
+  "engine_version": "1.0.0",
+  "archetypes": {
+    "type_1": {
+      "name": "concept_text",
+      "description": "Straight conceptual question, entirely text-based."
+    },
+    "type_2": {
+      "name": "data_table",
+      "description": "Questions dependent on data tables or execution matrices."
+    },
+    "type_3": {
+      "name": "block_code",
+      "description": "Visual block-based pseudocode dependency."
+    },
+    "type_4": {
+      "name": "pseudocode_text",
+      "description": "Textual APCSP exam-reference style pseudocode blocks."
+    },
+    "type_5": {
+      "name": "relational_diagram",
+      "description": "Visuals involving flowcharts, network nodes, or structural graphs."
+    },
+    "type_6": {
+      "name": "robot_grid",
+      "description": "Spatial grid/turtle-style movement navigation and logic."
+    }
+  },
+  "linguistic_constraints": {
+    "forbidden_words": [
+      "loop", 
+      "code fixes the error", 
+      "laptop", 
+      "phone",
+      "manually"
+    ],
+    "mandatory_replacements": {
+      "loop": "iteration statement",
+      "laptop": "device",
+      "phone": "device",
+      "manually fix": "mitigated by structural redundancy"
+    },
+    "frequent_stems": [
+      "Which of the following best explains",
+      "Which of the following is LEAST likely to be a consequence of",
+      "correctly sets the value of",
+      "Which of the following statements accurately describes"
+    ]
+  },
+  "processing_queue": {
+    "topics1_2_1A": "pending",
+    "topics1_2_2A": "pending"
+  }
+}
